@@ -26,7 +26,7 @@ class Star {
 
   // Display the star
   void update() {
-    
+
     // Move it closer to the camera
     z = z - speed;
 

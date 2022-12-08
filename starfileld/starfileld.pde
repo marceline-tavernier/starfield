@@ -20,7 +20,7 @@ void setup() {
   for (int i = 0; i < starfield.length; i++) {
     starfield[i] = new Star();
   }
-  
+
   // Put the background to black
   background(0);
 }
