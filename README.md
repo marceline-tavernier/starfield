@@ -10,7 +10,7 @@ The coding train challenge #1 : Starfield
 
 ## Details
 
-| Programing language | Start date | End date | Inspired by |
+| Programming language | Start date | End date | Inspired by |
 | :---: | :---: | :---: | :---: |
 | Processing | September 2022 | September 2022 | [This youtube video](https://youtu.be/17WoOqgXsRM) |
 
