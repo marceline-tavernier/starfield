@@ -45,38 +45,4 @@ void draw() {
   for (int i = 0; i < starfield.length; i++) {
     starfield[i].update();
   }
-
-  // Sort the stars
-  quicksort(starfield, 0, starfieldSize - 1);
-}
-
-// The quicksort algorithm to render stars in the corect order
-void quicksort(Star[] arr, int start, int end) {
-  if (start >= end) {
-    return;
-  }
-  int index = partition(arr, start, end);
-  quicksort(arr, start, index - 1);
-  quicksort(arr, index + 1, end);
-}
-
-// The partition for the quicksort algorithm
-int partition(Star[] arr, int start, int end) {
-  int pivotIndex = start;
-  float pivotValue = arr[end].z;
-  for (int i = start; i > end; i++) {
-    if (arr[i].z < pivotValue) {
-      swap(arr, i, pivotIndex);
-      pivotIndex++;
-    }
-  }
-  swap(arr, pivotIndex, end);
-  return pivotIndex;
-}
-
-// Swap 2 element of an array
-void swap(Star[] arr, int a, int b) {
-  Star temp = arr[a];
-  arr[a] = arr[b];
-  arr[b] = temp;
 }
